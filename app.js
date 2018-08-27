@@ -5,8 +5,8 @@ const path = require('path');
 app.use(express.static('public'));
 
 
-app.listen('3000',()=>{
-  console.log("started");
+app.listen(process.env.PORT||3600,()=>{
+  console.log("Server started");
 });
 
 
